@@ -1,9 +1,9 @@
 
 ---
 
-# SitemateQuiz Project Setup
+# Sitemate Quiz Setup
 
-Follow these steps to set up and run the SitemateQuiz project.
+Please follow these steps to set up and run the SitemateQuiz project.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Follow these steps to set up and run the SitemateQuiz project.
 
 ## Setup Instructions
 
-### 1. Start with Docker Compose
+### 1. Start with Docker Compose (Recommended)
 
 Build and run the Docker containers:
 
@@ -37,13 +37,13 @@ pnpm install
 #### Start the server:
 
 ```sh
-pnpm run server
+pnpm run-server
 ```
 
 #### Start the client:
 
 ```sh
-pnpm run client
+pnpm run-client
 ```
 
 ## Access the Project
