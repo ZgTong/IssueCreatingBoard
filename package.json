@@ -1,0 +1,14 @@
+{
+  "name": "SitemateQuiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-server": "pnpm --filter server start",
+    "run-client": "pnpm --filter client start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
