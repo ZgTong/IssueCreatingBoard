@@ -33,7 +33,13 @@ function App() {
     getIssues();
   }, []);
   return (
-    <Box className="App">
+    <Box className="App" sx={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "40px",
+      paddingY: "20px",
+    }}>
       <IssuesBoard data={issues} deleteIssue={deleteIssue} updateIssue={updateIssue}/>
       <IssueForm addIssue={addIssue}/>
     </Box>

@@ -11,6 +11,7 @@ import {
   DialogContent,
   DialogActions,
   TextField,
+  Box
 } from "@mui/material";
 
 const IssueList = ({ issues, deleteIssue, updateIssue }) => {
@@ -43,11 +44,18 @@ const IssueList = ({ issues, deleteIssue, updateIssue }) => {
   }
 
   return (
-    <>
-      <List>
+    <Box sx={{
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+    }}>
+      <List sx={{
+        width: "1400px",
+        border: "1px solid #ccc",
+      }}>
         {issues.map((issue) => (
           <ListItem key={issue.id}>
-            <ListItemText primary={issue.title} secondary={issue.description} />
+            <ListItemText primary={`Title: ${issue.title}`} secondary={`Description: ${issue.description}`} />
             <ListItemSecondaryAction>
               <Button
                 edge="end"
@@ -95,7 +103,7 @@ const IssueList = ({ issues, deleteIssue, updateIssue }) => {
           </Button>
         </DialogActions>
       </Dialog>
-    </>
+    </Box>
   );
 };
 
