@@ -1,5 +1,7 @@
 const initializeMiddlewares = require("./middlewares");
 const express = require("express");
+const fs = require('fs');
+const path = require('path');
 
 class App {
     constructor() {

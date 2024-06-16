@@ -1,14 +1,14 @@
 const express = require("express");
-const IssueController = require("../controllers/issues.controller");
+const IssuesController = require("../controllers/issues.controller");
 class IssueRoute {
     path = "/issues";
-    issueController = new IssueController();
+    issuesController = new IssuesController();
     router = express.Router();
     constructor() {
         this.initializeRoutes();
     }
     initializeRoutes() {
-        this.router.get(`${this.path}/:id`, this.issueController.getIssue);
+        this.router.get(`${this.path}/:id`, this.issuesController.getIssue);
     }
 };
 
