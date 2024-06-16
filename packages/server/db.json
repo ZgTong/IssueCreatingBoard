@@ -2,9 +2,15 @@
   "issues": [
     {
       "id": 1,
-      "title": "Issue 2",
+      "title": "Issue 1",
       "description": "This is the first issue",
-      "status": "open"
+      "status": "closed"
+    },
+    {
+      "id": 2,
+      "title": "issue222",
+      "description": "123456",
+      "status": "closed"
     }
   ]
 }

@@ -39,7 +39,7 @@ const IssueList = ({ issues, deleteIssue, updateIssue }) => {
   };
 
   if (!issues || issues.length === 0) {
-    return <Typography variant="body1">No todos found.</Typography>;
+    return <Typography variant="body1">No issues found.</Typography>;
   }
 
   return (
