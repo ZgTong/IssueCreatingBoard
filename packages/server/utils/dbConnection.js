@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 mongoose.Promise = global.Promise;
 
-async function dbConnection(connect = true) {
+async function dbConnection() {
     try {
         const dataPath = path.join(__dirname, dbPath);
         const jsonData = fs.readFileSync(dataPath, 'utf-8');
@@ -18,7 +18,7 @@ async function dbConnection(connect = true) {
 };
 
 
-async function saveData() {
+async function saveData(data) {
     const dataPath = path.join(__dirname, dbPath);
     await fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf-8');
 }
