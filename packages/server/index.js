@@ -8,8 +8,8 @@ async function setup() {
   server.get("/", (req, res) => {
     res.send("Hello World");
   });
-  server.listen(3000, () => {
-    console.log("Server is running on http://localhost:3000");
+  server.listen(8080, () => {
+    console.log("Server is running on http://localhost:8080");
   });
 }
 setup();
