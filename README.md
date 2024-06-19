@@ -1,9 +1,9 @@
 
 ---
 
-# Sitemate Quiz Setup
+# Issue Creating Board Setup
 
-Please follow these steps to set up and run the SitemateQuiz project.
+Please follow these steps to set up and run the Issue Creating Board project.
 
 ## Prerequisites
 
